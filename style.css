@@ -1,0 +1,170 @@
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background-color:rgb(164, 217, 237);
+}
+
+.box{
+    padding:0 25px 10px 25px;
+    margin-top:50px;
+    background-color:rgb(24, 23, 23);
+    border-radius:8px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}   
+
+.heading{
+    color:white;
+}
+
+.add_task{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input_task{
+    border:1px solid white;
+    font-size:14px;
+    padding-top:4px;
+    padding-left:5px;
+    padding-bottom:4px;
+    margin-right:5px;
+}
+#input_task::placeholder{
+font-size:14px;
+}
+
+.add{
+    display:inline-block;
+    position:relative;
+}
+#add_btn{
+    padding-top:4px;
+    padding-bottom:4px;
+    cursor:pointer;
+   background-color:blue;
+   border:none;
+}
+#add_btn:active{
+    background-color:green;
+    color:white;
+}
+.tooltip{
+    background-color:peachpuff;
+    color:black;
+    font-size:10px;
+    position:absolute;
+    bottom:-25px;
+    left:2px;
+    opacity:0;
+    transition:opacity 0.15s;
+    pointer-events:none;
+}
+.add:hover .tooltip{
+    opacity:1;
+}
+
+#task_list{
+    color:white;
+    font-size:20px;
+}
+
+.task_line{
+    color:white;
+    font-size:15px;
+}
+
+.striked{
+    text-decoration: line-through;
+    color:gray;
+}
+
+.delete{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:10px;
+    color:white;
+    text-decoration: underline;
+    background-color:red;
+    border:none;
+    padding-top:3px;
+    padding-bottom:3px;
+    margin-left:3px;
+}
+
+
+
+
+
+/* body{
+    padding-left:75px;
+    background-color:rgb(164, 217, 237);
+}
+
+.heading{
+    font-weight:bold;
+    text-align:center;
+}
+
+.list{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.task{
+    height:30px;
+    font-size:18px;
+    padding-left:7px;
+    border-color:rgb(180, 176, 176);
+    border-style:solid;
+    margin-right:5px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.checkbox{
+    height:20px;
+    width:20px;
+   
+}
+.cross{
+    color:red;
+    margin-bottom:4px;
+}
+.tick,
+.delete{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.tick .tooltip,
+.delete .tooltip{
+    background-color:grey;
+    color:white;
+    opacity:0;
+    transition: opacity 0.15s;
+    position:absolute;
+  bottom:-20px;
+  pointer-events:none;
+}
+.tick:hover .tooltip,
+.delete:hover .tooltip{
+opacity:1;
+}
+
+.done{
+    
+    border-style:solid;
+    border-width:1px;
+}
+.done:active{
+    background-color:green;
+    color:white;
+} */

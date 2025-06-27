@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <!-- <h1 class="heading">To Do List</h1>
+    <div class="list">
+        
+        <div class="tick">
+             <input class="checkbox" type="checkbox">
+             <div class="tooltip">completed</div>
+        </div>
+       
+        <input class="task" type="text" keydown="newTask" placeholder="Enter the task"> 
+        <div class="delete">
+            <input class="cross" type="button" value="x">
+            <div class="tooltip">delete</div>
+        </div>
+         <button class="done">Done</button> 
+    </div>
+     -->
+
+     <div class="box">    <!--todo-container-->
+        <h1 class="heading">To Do List</h1>   <!--header-->
+        <div class="add_task">    <!--todo-form-->
+            <input 
+            id="input_task" 
+            type="text" 
+            placeholder="Enter your task">
+            <div class="add">    <!--add button-->
+                <button id="add_btn">+</button>
+                <p class="tooltip">Add</p>
+            </div> 
+        </div>
+
+        <!--task list-->
+        <p id="task_list">Task List</p>
+        <ul id="list_container"></ul>
+     </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
