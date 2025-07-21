@@ -3,7 +3,7 @@ let listContainer=document.querySelector("#list_container");
 let addBtn=document.querySelector("#add_btn");
 
 function addTask(){
-    let task=inputBox.value;
+    let task=inputBox.value.trim();
     if(!task){
         alert("Please enter a task!");
         return ;
@@ -13,10 +13,11 @@ function addTask(){
        <input class="checkbox" type="checkbox">
        <span class="task_line">${task}</span>
       </label>
-      <button class="delete">Delete</button>`;
+      <button class="delete">Delete</button>
+      <button class="edit">Edit</button>`;
 
      listContainer.appendChild(li);
-     task="";
+     inputBox.value="";
 };
 
 addBtn.addEventListener("click",()=>{
@@ -47,6 +48,15 @@ listContainer.addEventListener("click",(event)=>{
         target.closest("li").remove();
     }
 
+     // When edit button is clicked
+    if (target.classList.contains("edit")) {
+        let edited=prompt("Make changes!");
+        if (edited !== null) {
+        const li = target.closest("li");
+        const span = li.querySelector(".task_line");
+        span.innerText = edited;
+    }
+    }
 });
 
 
